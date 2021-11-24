@@ -11,15 +11,15 @@ gsap.to(".abzieher", {
   });
 
 gsap.to(".cleanwindow", {
-    opacity: 1,
-    ease: "none",
       scrollTrigger: {
       trigger: ".animation",
-      start: 100,
-      end: "top",
+      start: "top",
+      end: 100,
       scrub: true,
       markers: true,
-      }
+  },
+  clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+  ease: "none"
     });
   
 
