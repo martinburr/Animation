@@ -1,5 +1,6 @@
-gsap.to(".abzieher", {
-  yPercent: 90,
+gsap.fromTo(".abzieher", {
+  yPercent: 3}, {
+  yPercent: 85,
   ease: "none",
     scrollTrigger: {
     trigger: ".animation",
@@ -7,7 +8,7 @@ gsap.to(".abzieher", {
     end: 100,
     scrub: true,
     markers: true,
-    }
+    } 
   });
 
 gsap.to(".cleanwindow", {
@@ -16,15 +17,11 @@ gsap.to(".cleanwindow", {
       start: "top",
       end: 100,
       scrub: true,
-      markers: true,
+    markers: true,
   },
-  clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-  ease: "none"
+  clipPath: "polygon(0 0, 100% 0, 100% 90%, 0 90%)",
+  ease: "none",
     });
-  
-
-
-
 
 ScrollTrigger.clearScrollMemory();
 window.history.scrollRestoration = "manual";
